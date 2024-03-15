@@ -218,22 +218,23 @@ body {
   overflow: hidden;
 }
 .zigzag-content h1 {
-  /* filter: drop-shadow(2px 3.3px 2px rgba(60, 73, 99, 0.5)); */
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 79px;
-  letter-spacing: 2.56px;
+  font-size: 40px;
+  font-weight: 900;
   text-transform: capitalize;
+  line-height: 1.13;
+  letter-spacing: -1.95px;
+  text-align: left;
 }
 
 .zigzag-content p {
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
   font-style: normal;
-  font-weight: 400;
-  line-height: 46px; /* 191.667% */
-  letter-spacing: 1.2px;
-  text-transform: capitalize;
+  line-height: 1.63;
+  letter-spacing: 1.8px;
+  text-align: justify;
+  color: #25313c;
 }
 
 /* Footer */
@@ -352,29 +353,6 @@ input[type="date"] {
   }
 }
 
-.brand {
-  overflow: scroll;
-  padding: 60px 0;
-  background: #e8d8d8;
-  white-space: nowrap;
-  display: flex;
-}
-
-.brand-box {
-  display: inline-block;
-  border: 2px solid black;
-  margin: 0 20px;
-  padding: 0 30px;
-}
-
-.brand-box img {
-  height: 100px;
-}
-
-.brand-slider {
-  /* animation: 5s slide infinite linear; */
-}
-
 .scroll {
   position: relative;
   display: flex;
@@ -430,21 +408,24 @@ input[type="date"] {
     transform: translateX(-200%);
   }
 }
-.scroll div span {
+.scroll div span , .scroll1 div span{
   display: inline-flex;
-  margin: 10px;
+  margin: 10px 25px;
   padding: 20px;
   border-radius: 5px;
+  border-radius: 5px;
   transition: 0.5s;
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.25);
+  border: 2px solid var(--primary-color);
 }
 .scroll div span img {
   height: 50px;
 }
 
-.scroll div span:hover {
+/* .scroll div span:hover {
   background: #3fd2f9;
   cursor: pointer;
-}
+} */
 
 .imgBox div {
   display: flex;

@@ -90,15 +90,15 @@
           <img src="assets/Hero-img.jpg" class="d-block w-100 img-fluid" alt="..." />
         </div>
         <div class="hero-content">
-            <h1 class="mb-3">Your journey our <br>prediction</h1>
-            <span class="d-block mb-5">Your Travel Roadmap: Seamlessly Guided by <br>Predictive Precision.</span>
-            <button class="custom-btn">PREDICT NOW</button>
+            <h1 class="mb-2">Your journey our <br>prediction</h1>
+            <span class="d-block">Your Travel Roadmap: Seamlessly Guided by <br>Predictive Precision.</span>
+            <a class="custom-btn" href="#main-form">PREDICT NOW</a>
         </div>
     </div>
 
     <!-- Main form -->
-    <div class="main-form-card container-fluid align-items-center justify-content-center d-flex flex-col">
-      <div class="card w-75">
+    <div id="main-form" class="main-form-card container-fluid align-items-center justify-content-center d-flex flex-col">
+      <div class="card w-75" style="box-shadow: var(--shadow);">
         <div class="card-header align-items-center justify-content-between d-flex px-4 py-3">
             <img src="assets/logo-black.png" alt="" class="img-fluid w-90">
             <h5 class="align-self-center">Flight Flare Prediction</h5>
@@ -125,11 +125,11 @@
             </div>
             <div class="col me-3 main-form-element align-items-center justify-content-center d-flex shadow p-2">
                 <img src="assets/calendar_55281 1.svg" alt="" class="me-2">
-                <input type="text" class="border border-0" name="Arrival Date" placeholder="Depart Date" placeholder="MM/DD/YYYY" onfocus="(this.type='date')" onblur="(this.type='text')">
+                <input type="text" class="border border-0" name="Arrival Date" placeholder="Depart Date" onfocus="(this.type='date')" onblur="(this.type='text')" style="width: 40%;">
             </div>
             <div class="col me-3 main-form-element align-items-center justify-content-center d-flex shadow p-2">
               <img src="assets/calendar_55281 1.svg" alt="" class="me-2">
-              <input type="text" class="border border-0" name="Arrival Date" placeholder="Arrival Date" placeholder="MM/DD/YYYY" onfocus="(this.type='date')" onblur="(this.type='text')">
+              <input type="text" class="border border-0" name="Arrival Date" placeholder="Arrival Date" onfocus="(this.type='date')" onblur="(this.type='text')" style="width: 40%;">
             </div>
             <div class="col me-3 main-form-element align-items-center justify-content-center d-flex shadow p-2">
                 <img src="assets/takeoff-plane_68380.svg" alt="" class="me-2">
@@ -159,15 +159,15 @@
                 </select>
             </div>
             <!-- <button class="col me-3 main-form-element btn btn-primary">Predict</button> -->
-            <button class="custom-btn">PREDICT NOW</button>
+            <a class="custom-btn"  href="#boarding-pass" >PREDICT NOW</a>
           </form>
         </div>
       </div>
     </div>
 
     <!-- Baording Pass -->
-    <div class="boarding-pass-card mt-5 container-fluid align-items-center justify-content-center d-flex flex-col w-50">
-      <div class="card">
+    <div  id="boarding-pass" class="boarding-pass-card container-fluid align-items-center justify-content-center d-flex flex-col w-50" >
+      <div class="card" style="box-shadow: var(--shadow);">
         <div class="card-header align-items-center justify-content-between d-flex">
           <img src="assets/logo-black.png" alt="" class="img-fluid w-90">
           <h5 class="align-self-center">Boarding Pass</h5>
@@ -215,7 +215,7 @@
               <h6>AIR INDIGO</h6>
             </div>
           </div>
-          <div class="col-12"><button class="d-block mx-auto custom-btn">PREDICT NOW</button></div>
+          <div class="col-12"><span class="predicted-amount d-block w-25 mx-auto">₹10,000</span></div>
         </div>
       </div>
     </div>
@@ -240,7 +240,7 @@
         </div>
       </div>
       
-      <div class="scroll1 scroll mt-4 mb-5 overflow-hidden" style="--time:20s">
+      <div class="scroll1 scroll mt-4 mb-5 overflow-hidden" style="--time:15s">
         <div>
           <span><img src="assets/indigo-vector-logo-2022 1.png" alt=""></span>
           <span><img src="assets/indigo-vector-logo-2022 1.png" alt=""></span>
@@ -263,7 +263,7 @@
 
 
      <!-- Awarness Container -->
-     <div class="container mx-auto my-md-4 my-3"> 
+     <div class="container-fluid mx-auto my-md-4 my-3"> 
       <div class="row align-items-center justify-content-center  flex-wrap flex-md-nowrap">
         <div class="col-12 col-md-6 me-lg-4 me-md-4 ">
           <div class="zigzag-content mb-3 mb-sm-0">
@@ -281,7 +281,7 @@
       </div>
     </div>
     <!-- Aout project -->
-    <div class="container mx-auto zigzag-second-wrapper my-md-4 my-3">
+    <div class="container-fluid mx-auto zigzag-second-wrapper my-md-4 my-3">
       <div class="row align-items-center justify-content-between flex-wrap flex-md-nowrap zigzag-second flex-row">
         <div class="col-12 col-md-6 me-lg-4 me-md-4">
           <div class="zigzag-img mt-3 mt-sm-0">
@@ -301,7 +301,7 @@
     </div>
     
      <!-- Objective -->
-     <div class="container mx-auto my-md-4 my-3"> 
+     <div class="container-fluid mx-auto my-md-4 my-3"> 
       <div class="row align-items-center justify-content-center  flex-wrap flex-md-nowrap">
         <div class="col-12 col-md-6 me-lg-4 me-md-4 ">
           <div class="zigzag-content mb-3 mb-sm-0">
@@ -320,7 +320,7 @@
     </div>
 
     <!-- Learnings -->
-    <div class="container mx-auto zigzag-second-wrapper my-md-4 my-3">
+    <div class="container-fluid mx-auto zigzag-second-wrapper my-md-4 my-3">
       <div class="row align-items-center justify-content-between flex-wrap flex-md-nowrap zigzag-second flex-row">
         <div class="col-12 col-md-6 me-lg-4 me-md-4">
           <div class="zigzag-img mt-3 mt-sm-0">
@@ -341,18 +341,13 @@
 
     <!-- Footer -->
     <div class="footer mt-5 ">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row justify-content-between justify-content-lg-around">
-            <div class="col-12 col-md-6 col-lg-8 footer-logo mb-4 m-lg-0">
+            <div class="col-12 col-md-6 col-lg-7 footer-logo mb-4 m-lg-0 me-lg-5">
               <a href="index.php" ><img src="assets/logo-black.png" class="img-fluid mb-3" alt="LOGO"></a>
               <p class="footer-desc mb-3">Welcome to AtlasFly, where flight meets innovation! Our dynamic team, Faiz Ansari, Vaibhav Raut, Shree Shinde, and Jay Patel, is revolutionizing the travel industry with precise flight cost predictions using machine learning</p>
-              <div class="social-media-wrapper d-flex align-items-center justify-content-start">
-                <a href="#"><i class="fab fa-instagram me-4"></i></a>
-                <a href="#"><i class="fab fa-facebook me-4"></i></a>
-                <a href="#"><i class="fab fa-youtube me-4"></i></a>
-              </div>
             </div>
-            <div class="col-12 col-md-4 col-lg-2 d-flex flex-column mb-4 m-lg-0">
+            <div class="col-12 col-md-4 col-lg-2 d-flex flex-column mb-4 m-lg-0 ">
               <h6 class="footer-head mb-4">Find us</h6>
               <a href="index.php" class="footer-link mb-4">Phone</a>
               <a href="index.php" class="footer-link mb-4">Github</a>

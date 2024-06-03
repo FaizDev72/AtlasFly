@@ -21,10 +21,4 @@ We're committed to continuously improving the project. Future enhancements may i
 - User authentication and personalized features
 - Optimization of machine learning models
 
-## Contributions
-We welcome contributions from the community! If you'd like to contribute, please follow our [Contributing Guidelines](CONTRIBUTING.md).
-
-## License
-This project is licensed under the [MIT License](LICENSE).
-
 Feel free to reach out to the team if you have any questions or suggestions. Happy coding and safe travels!

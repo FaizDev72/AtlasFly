@@ -4,6 +4,8 @@ import sklearn
 import pickle
 import pandas as pd
 from datetime import datetime, timedelta  # Import datetime module
+import os  # Import os module for environment variables
+
 
 app = Flask(__name__)
 model = pickle.load(open("flight_rf.pkl", "rb"))
@@ -390,6 +392,7 @@ def predict():
 
 
 
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Use PORT environment variable or default to 5000
+    app.run(host="0.0.0.0", port=port, debug=True)
+
